@@ -14,11 +14,11 @@ import App from './App.vue'
 const router = createRouter({
     history:createWebHistory(),
     routes:[
-        {path:'/', component:HomeView},
-        {path:'/Usuarios', component:UsuarioView},
-        {path:'/Inquilinos', component:InquilinoView},
-        {path:'/Servicios', component:ServicioView},
-        { path: '/Sucursal', component: SucursalView }
+        {path:'/', component:HomeView, meta: { title: 'Inicio' }},
+        {path:'/Usuarios', component:UsuarioView, meta: { title: 'Usuarios' }},
+        {path:'/Inquilinos', component:InquilinoView, meta: { title: 'Inquilinos' }},
+        {path:'/Servicios', component:ServicioView, meta: { title: 'Servicios' }},
+        { path: '/Sucursal', component: SucursalView, meta: { title: 'Sucursales' } }
     ]
 })
 
